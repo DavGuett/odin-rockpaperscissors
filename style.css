@@ -1,0 +1,65 @@
+body {
+  background-color: #f7f7f7;
+}
+.option {
+  font-size: 100px;
+  display: inline-block;
+  text-align: center;
+  padding: 0px;
+  margin: 10px;
+  transition: transform 0.7s;
+}
+
+#rock,
+#paper,
+#scissors {
+  margin-bottom: 0px;
+}
+
+.name {
+  font-size: 25px;
+  text-align: center;
+}
+
+.option:hover {
+  transform: scale(1.2);
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 400px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background-color: aqua; */
+}
+
+.player {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.computer {
+  grid-column: 2;
+}
+
+.player-score {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.computer-score {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.player,
+.computer,
+.player-score,
+.computer-score {
+  justify-self: center;
+}

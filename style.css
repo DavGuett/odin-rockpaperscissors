@@ -34,7 +34,7 @@ body {
 
 .scoreboard {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   /* background-color: aqua; */
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .computer {
-  grid-column: 2;
+  grid-column: 3;
 }
 
 .player-score {
@@ -53,7 +53,7 @@ body {
 }
 
 .computer-score {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 2;
 }
 

@@ -1,4 +1,3 @@
-console.log("Olá mundo");
 let playerScore = 0;
 let computerScore = 0;
 const rockBtn = document.querySelector("#rock");
@@ -6,19 +5,20 @@ const paperBtn = document.querySelector("#paper");
 const scissorsBtn = document.querySelector("#scissors");
 const playerSelection = [rockBtn, paperBtn, scissorsBtn];
 
-function computerPlay() {
-  const computerOptions = ["Rock", "Paper", "Scissors"];
-  let move = Math.floor(Math.random() * 3);
-  const computerSelection = computerOptions[move];
-  console.log(computerSelection);
-}
+playerSelection.forEach((selection) => {
+  selection.addEventListener("click", playRound);
+});
 
-function playRound() {
-  playerSelection.forEach((selection) => {
-    selection.addEventListener("click", computerPlay);
-    console.log(selection.innerText);
-  });
+function computerPlay() {
+  const computerOptions = [rockBtn, paperBtn, scissorsBtn];
+  let move = Math.floor(Math.random() * 3);
+  const computerSelection = computerOptions[move].innerText;
+}
+computerPlay();
+
+function playRound(e) {
+  console.log(e.currentTarget.innerText);
+  // console.log(computerSelection);
 }
 
 function game() {}
-console.log(playRound());

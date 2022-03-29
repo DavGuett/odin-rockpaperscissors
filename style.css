@@ -47,6 +47,10 @@ body {
   grid-column: 3;
 }
 
+.result {
+  grid-column: 2;
+}
+
 .player-score {
   grid-column: 1;
   grid-row: 2;
@@ -60,6 +64,7 @@ body {
 .player,
 .computer,
 .player-score,
-.computer-score {
+.computer-score,
+.result {
   justify-self: center;
 }

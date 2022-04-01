@@ -1,5 +1,5 @@
 body {
-  background-color: #f7f7f7;
+  background-color: #a7a7a7;
 }
 .option {
   font-size: 100px;
@@ -35,7 +35,6 @@ body {
 .scoreboard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* background-color: aqua; */
 }
 
 .player {
@@ -49,6 +48,7 @@ body {
 
 .result {
   grid-column: 2;
+  font-size: 25px;
 }
 
 .player-score {

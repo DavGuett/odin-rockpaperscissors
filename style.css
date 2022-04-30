@@ -25,7 +25,7 @@ body {
   transform: scale(1.2);
 }
 
-#container {
+.container {
   margin: 0 auto;
   max-width: 400px;
   box-sizing: border-box;
@@ -65,6 +65,21 @@ body {
 .computer,
 .player-score,
 .computer-score,
+.player-option,
+.computer-option,
 .result {
   justify-self: center;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 50px;
+}
+
+.player-option {
+  grid-column: 1;
+}
+.computer-option {
+  grid-column: 3;
 }
